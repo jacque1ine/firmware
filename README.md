@@ -57,4 +57,5 @@ Connect the system components according to the provided schematics.
 Upload the Arduino code to both Botboarduino controllers.
 Open the Serial Monitor in the Arduino IDE and enter the desired target location (1, 2, or 3).
 Observe each mechanism picking and placing the payload according to the coordinated input received.
+<img width="789" alt="image" src="https://github.com/user-attachments/assets/948d6fa0-9005-4733-a1a2-7d89b64d0e13">
 
