@@ -1,8 +1,15 @@
 # 5-Bar Pick and Place Mechanism
 
-## Overview
-This repository contains the implementation of a 5-bar pick and place robotic mechanism designed to autonomously pick up and relocate a cylindrical payload. 
-The project utilizes hobby servos and a Botboarduino controller programmed with Arduino IDE to achieve precise movement and sensor feedback. 
+## Project Objective
+
+1. Your system must take an input that specifies a destination location (target 1, 2, or 3) for the 
+payload. Using that input your mechanism will then move to the current location of the 
+payload, pick it up and move it to the location specified by the input. 
+2. You and your partner’s systems must track the current location of the payload and 
+communicate it between the two systems so that both systems know where to go to pick up the 
+payload.
+3. You must designate a home location where your mechanism goes when it is not moving the 
+payload
 
 ## Project Description
 The goal of this project is to create two identical robotic mechanisms capable of:
@@ -12,6 +19,7 @@ The goal of this project is to create two identical robotic mechanisms capable o
 
 Both mechanisms utilize Arduinos to communicate their respective locations, allowing them to coordinate actions during payload handling.
 
+
 **Example**
 Both robots start at Home. Robot A goes to target 1 and picks up the payload, drops of the payload at target 2, and tells Robot B the payload position is now at target 2. 
 Robot B receives the information from Robot A and goes to target 2 to pick up the payload, and drops off the payload at target 3. 
@@ -19,6 +27,8 @@ Robot B receives the information from Robot A and goes to target 2 to pick up th
 Some challenges are: 
 1) The communication piece
 2) even though the targets are fixed, the relative positions are different. Ex. to move from target 1 to target 2, is different from moving from target 3 to target1.
+
+   
 
 ## Hardware Components
 - **5-Bar Mechanism**: Two identical 5-bar mechanisms built with aluminum t-slot extrusion.
